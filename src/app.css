@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* This is a workaround for using sveltecubed and tailwind js.
+ See issue https://github.com/Rich-Harris/svelte-cubed/issues/60. */
+.container {
+    position: relative !important;
+}
+
+canvas {
+    position: relative !important;
+}
+
+html * {
+    font-family: 'Anybody', cursive;
+}
