@@ -7,6 +7,9 @@
     import * as SC from 'svelte-cubed';
     import { blur } from 'svelte/transition';
 
+    // TODO: Add texts to sides of the cube or make cube
+    // favorite colors and focus on the side that the mouse is touching.
+
     // Canvas Properties
     const canvasProps = {
         width: 960,
