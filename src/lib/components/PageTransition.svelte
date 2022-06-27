@@ -3,13 +3,15 @@
 
     export let url = "";
 
-    const TransitionDuration = 1000;
-    const PixelSize = 20;
+    const TransitionProperties = {
+        duration: 1000,
+        amount: 20,
+    };
 </script>
 
 {#key url}
-    <div in:blur={{duration: TransitionDuration, amount: PixelSize}}
-        out:blur={{duration: TransitionDuration, amount: PixelSize}}>
+    <div in:blur={TransitionProperties}
+        out:blur={TransitionProperties}>
         <slot />
     </div>
 {/key}
