@@ -4,10 +4,9 @@
 
 <script lang="ts">
     import portrait from "../../static/about-me-pic.jpeg?width=800&jpg";
-    import { blur } from 'svelte/transition';
 </script>
 
-<div class="mx-4 top-2 flex flex-row" transition:blur>
+<div class="mx-4 top-2 flex flex-row">
     <img src={portrait} class="mx-2" alt="Nonso Chukwuarah" />
     <div class="mx-2">
         <h1 class="text-5xl">About Me</h1>

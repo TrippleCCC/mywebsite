@@ -1,7 +1,17 @@
+<script lang="ts" context="module">
+    /** @type {import('@sveltejs/kit').Load} */
+    export const load = async ({url}) => {
+        return {props: {url}};
+    };
+
+</script>
+
 <script lang="ts">
-    import { onMount } from "svelte";
+    import PageTransition from "$lib/components/PageTransition.svelte";
     import "../app.css";
     import Typewriter from "svelte-typewriter";
+
+    export let url;
 
     let cursor = "|";
 
@@ -40,6 +50,6 @@
     </div>
 </div>
 
-<div>
+<PageTransition {url}>
     <slot></slot>
-</div>
+</PageTransition>

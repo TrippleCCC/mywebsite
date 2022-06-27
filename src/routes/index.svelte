@@ -54,7 +54,7 @@
 
 </script>
 
-<div id="animation" class="flex justify-center" transition:blur>
+<div id="animation" class="flex justify-center">
     <SC.Canvas {...canvasProps} >
         <SC.Mesh {...cubeProps} />
         <SC.OrthographicCamera {...camProps} />
